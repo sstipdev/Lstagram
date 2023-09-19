@@ -8,9 +8,9 @@ const devOnlyPlugins = [getStartedPlugin()]
 
 export default defineConfig({
   name: 'default',
-  title: 'salmon-dotterel',
+  title: 'Lstagram',
 
-  projectId: 'dsmusb0y',
+  projectId: 'teor3492',
   dataset: 'production',
 
   plugins: [deskTool(), visionTool(), ...(isDev ? devOnlyPlugins : [])],
@@ -19,3 +19,4 @@ export default defineConfig({
     types: schemaTypes,
   },
 })
+
