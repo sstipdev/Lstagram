@@ -2,7 +2,7 @@ export default {
   title: 'User',
   name: 'user',
   type: 'document',
-  fileds: [
+  fields: [
     {
       title: 'Username',
       name: 'username',
@@ -20,7 +20,7 @@ export default {
     },
     {
       title: 'Image',
-      nmae: 'image',
+      name: 'image',
       type: 'string',
     },
     {
