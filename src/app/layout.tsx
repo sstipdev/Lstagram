@@ -7,6 +7,7 @@ const openSans = Open_Sans({ subsets: ["latin"] });
 
 // Components
 import Navbar from "@/components/Navbar";
+import AuthContext from "@/context/AuthContext";
 
 export const metadata = {
   title: "Create Next App",
@@ -21,10 +22,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={openSans.className}>
       <body className="w-full max-w-screen-xl overflow-auto mx-auto">
-        <header className="sticky top-0 bg-white z-10 border-b">
-          <Navbar />
-        </header>
-        <main>{children}</main>
+        <AuthContext>
+          <header className="sticky top-0 bg-white z-10 border-b">
+            <Navbar />
+          </header>
+          <main>{children}</main>
+        </AuthContext>
       </body>
     </html>
   );
